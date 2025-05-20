@@ -1,0 +1,73 @@
+html {
+    height: 100%;    
+}
+
+body {
+    background-color: #d3d7db; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu",sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+main {
+    padding: 20px 50px; 
+    display: flex; 
+    gap: 55px;
+}
+
+.container {
+    min-width: 200px; 
+    max-width: 900px; 
+    background-color: white; 
+    border-radius: 40px; 
+    padding: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.title {
+    display: flex;
+    background-color: bisque;
+    margin: 0px;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.title h1 {
+    text-align: center; 
+    color: #253549;
+}
+
+.head-profile {
+    display: flex; 
+    justify-content: center;
+}
+
+.img-profile {
+    max-width: 400px; 
+    min-width: 250px; 
+    align-content: center;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.about-profile {
+    align-content: center; 
+    margin-right: 20px;  
+    
+    & ul {
+        padding: 0px 0px 0px 20px;
+    }
+}
+
+.about-me {
+    margin-right: 20px;
+
+    & p {
+        text-align: justify;
+    }
+}
