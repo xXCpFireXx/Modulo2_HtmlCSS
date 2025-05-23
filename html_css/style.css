@@ -83,7 +83,13 @@ nav ul li a:hover {
     }
 
     & ul {
-        padding: 0px 0px 0px 18px;
+        padding: 0;
+        list-style: none;
+    }
+
+    & a {
+        text-decoration: none;
+        color: black;
     }
 
     & #table-about-me{
@@ -154,8 +160,25 @@ nav ul li a:hover {
 #list-projects {
     margin: 0 20px;
 
+    & article{
+        margin: 0 30px 30px 30px;
+
+        & p {
+        margin: 0px;
+        text-align: justify;
+        }
+    }
 
 }
+
+.button{
+    background: linear-gradient(90deg, rgba(240, 221, 148, 1) 36%, rgba(249, 167, 130, 1) 100%);
+    padding: 10px;
+    border-radius: 20px;
+    color: #000;
+    font-weight: 700;
+}
+
 
 summary {
   list-style: none;
@@ -164,7 +187,6 @@ summary {
   align-items: center;
   padding: 10px 15px;
   font-weight: bold;
-  
 }
 
 summary::after {
@@ -192,10 +214,11 @@ summary {
 details[open] summary {border-radius: 5px 5px 0 0;}
 
 details {
-  background-color: #e792e7;
-  background: linear-gradient(90deg, rgba(240, 221, 148, 1) 36%, rgba(249, 167, 130, 1) 100%);
-  border-radius: 5px;
+  background-color: #f0dd9424;
+/*   background: linear-gradient(90deg, rgba(240, 221, 148, 1) 36%, rgba(249, 167, 130, 1) 100%);
+ */ border-radius: 5px;
   margin: 5px 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 }
 
